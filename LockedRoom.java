@@ -1,3 +1,5 @@
+package Zuul;
+
 
 /**
  * A locked room needs a key of some sort to open it. It can be locked, unlocked,

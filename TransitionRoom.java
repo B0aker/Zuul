@@ -1,3 +1,5 @@
+package Zuul;
+
 
 /**
  * Meant to be an inbetween room like the elevator, a stairwell, or hallway

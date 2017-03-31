@@ -1,3 +1,5 @@
+package Zuul;
+
 import java.util.HashMap;
 import java.util.Set;
 import java.util.Random;
@@ -461,23 +463,33 @@ public class Game
         
                             
         // Setting up exits and items between rooms:        
-        // Patient Care
-        patientCare.setExit("west", cafe);
+        // Parking Lot
+        parkingLot.setExit("north", lobby);
+        // Lobby
+        lobby.setExit("east" , bathroom);
+        lobby.setExit("north", mainOffice);
+        lobby.setExit("south", parkingLot);
+        lobby.setExit("west", courtYard);
+        // Court Yard
+        courtYard.setExit("north", giftShop);
+        courtYard.setExit("east", lobby);
+        courtYard.setExit("south", cafe);
+        courtYard.setExit("west", powerPlant);
+        powerPlant.setExit("east", courtYard);
         patientCare.setExit("south", bathroom);
+        //Cafe
+        cafe.setExit("north", courtYard);
+        //Gift Shop
+        giftShop.setExit("south", courtYard);
         // Bathroom
-        bathroom.setExit("north", patientCare);
-        bathroom.setExit("east", middleStall);
+        bathroom.setExit("west", lobby);
+        bathroom.setExit("south", middleStall);
         bathroom.store(pipe);
-        middleStall.setExit("west", bathroom);
+        middleStall.setExit("north", bathroom);
         middleStall.store(bleach);
-        // Cafe
-        cafe.setExit("down", basement);
-        cafe.setExit("east", patientCare);
-        cafe.setExit("south", office);
         // Office
-        office.setExit("north", cafe);
+        mainOffice.setExit("south", lobby);
         // Basment
-        basement.setExit("up", cafe);
         basement.store(officeKey);
         basement.store(bigRock);
         

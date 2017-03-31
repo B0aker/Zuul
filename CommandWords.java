@@ -1,3 +1,5 @@
+package Zuul;
+
 /**
  * This class is part of the "World of Zuul" application. 
  * "World of Zuul" is a simple, text based adventure game.

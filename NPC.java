@@ -1,3 +1,5 @@
+package Zuul;
+
 
 /**
  * A type of player that is controlled by the game rather than the user

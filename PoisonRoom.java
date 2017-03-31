@@ -1,3 +1,5 @@
+package Zuul;
+
 
 /**
  * Write a description of class PoisonRoom here.

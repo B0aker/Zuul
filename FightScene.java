@@ -1,3 +1,5 @@
+package Zuul;
+
 import java.util.Random;
 import java.util.Scanner;
 /**

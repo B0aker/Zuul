@@ -1,3 +1,5 @@
+package Zuul;
+
 
 /**
  * Items are objects that the players can pick up. They are also stored in rooms.
